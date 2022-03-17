@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+//
 private class MyWebViewClient : WebViewClient() {
 
     @TargetApi(Build.VERSION_CODES.N)
