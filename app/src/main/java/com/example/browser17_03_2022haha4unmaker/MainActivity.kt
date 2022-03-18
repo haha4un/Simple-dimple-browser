@@ -30,10 +30,16 @@ class MainActivity : AppCompatActivity() {
         {
             var search = txt.text;
 
-            w?.loadUrl("https://yandex.ru/search/?lr=37166&text=$search")
+            w?.loadUrl("https://www.google.com/search?q=$search")
         }
-
     }
+
+    override fun onBackPressed() {
+        if (w?.canGoBack() == true) {
+            w?.goBack()
+        }
+    }
+
 }
 //
 private class MyWebViewClient : WebViewClient() {
