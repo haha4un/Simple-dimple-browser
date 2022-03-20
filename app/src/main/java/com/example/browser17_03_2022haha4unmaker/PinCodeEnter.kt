@@ -331,7 +331,7 @@ class PinCodeEnter : AppCompatActivity() {
     {
         db.execSQL("CREATE TABLE IF NOT EXISTS user (id INTEGER NOT NULL,name INTEGER NOT NULL UNIQUE, opens INTEGER NOT NULL DEFAULT 0, PIN NOT NULL);")
 
-        var check: Cursor = db.rawQuery("SELECT id FROM user", null)
+        var check: Cursor = db.rawQuery("SELECT name FROM user", null)
 
         var vs: Int;
 
