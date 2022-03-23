@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Browser17_03_2022haha4unMaker">
         <activity
+            android:name=".Main"
+            android:exported="false" />
+        <activity
             android:name=".PinCodeEnter"
             android:exported="true">
             <intent-filter>
@@ -22,8 +25,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

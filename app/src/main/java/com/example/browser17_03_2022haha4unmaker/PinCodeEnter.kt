@@ -380,7 +380,7 @@ class PinCodeEnter : AppCompatActivity() {
         note.show()
 
 
-        var toNext: Intent = Intent(this, MainActivity::class.java)
+        var toNext: Intent = Intent(this, Main::class.java)
         startActivity(toNext)
     }
 }
